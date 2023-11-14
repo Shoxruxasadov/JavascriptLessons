@@ -1,0 +1,9 @@
+let vtr = document.getElementById('h1')
+let str = document.getElementById('h2')
+let a = Number(prompt('Paralelopiped sirti va hajmi: a tomonni kiriting')) 
+let b = Number(prompt('Paralelopiped sirti va hajmi: b tomonni kiriting')) 
+let c = Number(prompt('Paralelopiped sirti va hajmi: c tomonni kiriting')) 
+let v = a*b*c
+let s = 2* (a*b + b*c + a*c)
+vtr.innerText+=v
+str.innerText+=s

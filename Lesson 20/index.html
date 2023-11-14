@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!------- META ------->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!------- Title ------->
+    <title>Lesson 20</title>
+
+    <!------ Favicon ------>
+    <link href="#" rel="icon" />
+    <link href="#" rel="apple-touch-icon" />
+
+    <!---- Fontawesome ---->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-------- CSS -------->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="head-container">
+        <ul>
+          <li class="list active">
+            <button onclick="stepUsers()">
+              <b></b><b></b><i class="fa-solid fa-user"></i>
+            </button>
+          </li>
+          <li class="list">
+            <button onclick="stepPosts()">
+              <b></b><b></b><i class="fa-solid fa-image-portrait"></i>
+            </button>
+          </li>
+          <li class="list">
+            <button onclick="stepComments()">
+              <b></b><b></b><i class="fa-solid fa-comment"></i>
+            </button>
+          </li>
+          <li class="list">
+            <button onclick="stepTodos()">
+              <b></b><b></b><i class="fa-solid fa-clipboard-check"></i>
+            </button>
+          </li>
+          <li class="list">
+            <button onclick="stepAlbums()">
+              <b></b><b></b><i class="fa-regular fa-image"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="usersSection">
+        <div class="users-container">
+          <table>
+            <thead>
+              <th>№</th>
+              <th>Full Name</th>
+              <th>User Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Website</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="postsSection">
+        <div class="posts-container" id="postBody"></div>
+      </section>
+      <section id="comentSection">
+        <div class="coment-container" id="comentBody"></div>
+      </section>
+      <section id="todosSection">
+        <div class="todos-container" id="todosBody"></div>
+      </section>
+      <section id="albumsSection">
+        <div class="albums-container" id="albumsBody"></div>
+      </section>
+    </main>
+
+    <script src="./js/axios.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+

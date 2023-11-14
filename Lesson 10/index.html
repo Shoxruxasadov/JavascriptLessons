@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Icon -->
+    <link href="./img/icon/android-chrome-192x192.png" rel="icon">
+    <link href="./img/icon/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="calculator">
+            <div class="inp-all">
+                <input maxlength="0" placeholder="0" id="inp" type="text">
+            </div>
+            <div class="btns-all">
+
+                <div class="desktop">
+                    <div class="btn-desk">
+                        <button onclick="bracketr()">(</button>
+                        <button onclick="bracketl()">)</button>
+                        <button onclick="press()">mc</button>
+                        <button onclick="press()">m+</button>
+                        <button onclick="press()">m-</button>
+                        <button onclick="press()">mr</button>
+                    </div>
+                    <div class="btn-desk">
+                        <button onclick="press()">2<sup>nd</sup></button>
+                        <button onclick="press()">x<sup>2</sup></button>
+                        <button onclick="press()">x<sup>3</sup></button>
+                        <button onclick="press()">x<sup>y</sup></button>
+                        <button onclick="press()">e<sup>x</sup></button>
+                        <button onclick="press()">10<sup>x</sup></button>
+                    </div>
+                    <div class="btn-desk">
+                        <button onclick="press()">&#8543;x</button>
+                        <button onclick="press()">&#8730;x</button>
+                        <button onclick="press()">&#8731;x</button>
+                        <button onclick="press()">y√x</button>
+                        <button onclick="press()">In</button>
+                        <button onclick="press()">log<sub>10</sub></button>
+                    </div>
+                    <div class="btn-desk">
+                        <button onclick="press()">x!</button>
+                        <button onclick="press()">sin</button>
+                        <button onclick="press()">cos</button>
+                        <button onclick="press()">tan</button>
+                        <button onclick="press()">e</button>
+                        <button onclick="press()">EE</button>
+                    </div>
+                    <div class="btn-desk">
+                        <button onclick="press()">Rad</button>
+                        <button onclick="press()">sinh</button>
+                        <button onclick="press()">cosh</button>
+                        <button onclick="press()">tanh</button>
+                        <button onclick="press()">&#x1D77F;</button>
+                        <button onclick="press()">Rand</button>
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <div class="btn-num">
+                        <button class="dark-desk" onclick="clears()">C</button>
+                        <button class="dark-desk" onclick="back()"><</button>
+                        <button class="dark-desk" onclick="percentage()">%</button>
+                        <button class="gold-desk" onclick="draw('/')">&divide;</button>
+                    </div>
+                    <div class="btn-num">
+                        <button class="gray-desk" onclick="draw('7')">7</button>
+                        <button class="gray-desk" onclick="draw('8')">8</button>
+                        <button class="gray-desk" onclick="draw('9')">9</button>
+                        <button class="gold-desk" onclick="draw('*')">&times;</button>
+                    </div>
+                    <div class="btn-num">
+                        <button class="gray-desk" onclick="draw('4')">4</button>
+                        <button class="gray-desk" onclick="draw('5')">5</button>
+                        <button class="gray-desk" onclick="draw('6')">6</button>
+                        <button class="gold-desk" onclick="draw('-')">-</button>
+                    </div>
+                    <div class="btn-num">
+                        <button class="gray-desk" onclick="draw('1')">1</button>
+                        <button class="gray-desk" onclick="draw('2')">2</button>
+                        <button class="gray-desk" onclick="draw('3')">3</button>
+                        <button class="gold-desk" onclick="draw('+')">+</button>
+                    </div>
+                    <div class="btn-num">
+                        <button class="gray-desk" id="zero" onclick="draw('0')">0</button>
+                        <button class="gray-desk" onclick="draw('.')">.</button>
+                        <button class="gold-desk" onclick="equal()">=</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

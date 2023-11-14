@@ -1,0 +1,317 @@
+/* DEFAULT CODE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  cursor: default;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#e3edf7, #c4dfff);
+}
+
+input,
+button,
+a {
+  cursor: pointer;
+}
+
+#homework_one,
+#homework_two,
+#homework_three,
+#homework_four,
+#homework_five {
+  display: none;
+}
+
+/* INPUT AND BUTTON - STYLE */
+input {
+  border: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  background: transparent;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  color: white;
+}
+input::placeholder {
+  color: white;
+  font-style: italic;
+}
+input:focus {
+  padding-left: 15px;
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  color: white;
+  transition: 0.1s;
+}
+button:hover {
+  background: white;
+  color: tomato;
+  font-weight: bold;
+}
+button:active {
+  transform: scale(0.9);
+  font-weight: bold;
+}
+button:focus {
+  background: white;
+  color: tomato;
+  transform: scale(0.9);
+  font-weight: bold;
+}
+/* INPUT AND BUTTON - STYLE END */
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  height: 7%;
+}
+.header button {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  border-bottom: 2px solid skyblue;
+  color: skyblue;
+  transition: 0.1s;
+}
+.header button:hover {
+  background: skyblue;
+  color: white;
+  font-weight: bold;
+}
+.header button:active {
+  transform: scale(0.9);
+  font-weight: bold;
+}
+.header button:focus {
+  background: lightblue;
+  color: white;
+  transform: scale(0.9);
+  font-weight: bold;
+}
+/* HEADER END */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 93%;
+}
+
+/* HOMEWORK ONE */
+.hw-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  background: tomato;
+  box-shadow: 0 0 4px 4px tomato;
+}
+
+.hw-one input {
+  width: 100%;
+  height: 19.5%;
+}
+
+.hw-one button {
+  width: 100%;
+  height: 22%;
+}
+
+/* HOMEWORK TWO */
+.hw-two {
+  display: flex;
+  gap: 20px;
+  width: 600px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  background: tomato;
+  box-shadow: 0 0 4px 4px tomato;
+}
+
+.add-save-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 40%;
+}
+
+.add-btn-box {
+  height: 20%;
+}
+.add-btn-box button {
+  width: 100px;
+  height: 30px;
+}
+
+.dc-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.dc-box input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+.dc-box button {
+  margin-top: 60px;
+  width: 100px;
+  height: 30px;
+}
+
+.dc-box button {
+  align-self: flex-end;
+}
+
+.dc-text {
+  border-bottom: 1.3px solid white;
+  border-top: 1.4px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  height: 100%;
+  width: 60%;
+  color: white;
+}
+
+#description_box,
+#dc_text_box {
+  display: none;
+}
+
+/* HOMEWORK THREE */
+.hw-three {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+#onoff_btn {
+  width: 100px;
+  height: 100px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10%;
+  background: green;
+  font-weight: bold;
+}
+#onoff_btn:hover {
+  color: white;
+}
+#onoff_btn:focus {
+  color: white;
+}
+
+/* HOMEWORK FOUR */
+.hw-four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-clock {
+  display: flex;
+  gap: 10px;
+  width: 256px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.btn-clock button {
+  width: 50%;
+  height: 100%;
+  border: 1px solid;
+  background: black;
+  border-radius: 5px;
+}
+.btn-clock button:hover {
+  border: 1px solid;
+  background: rgb(80, 80, 80);
+  border-radius: 5px;
+  color: #c4dfff;
+  font-weight: normal;
+}
+.btn-clock button:focus {
+  border: 1px solid;
+  background: black;
+  border-radius: 5px;
+  color: #c4dfff;
+  font-weight: normal;
+}
+
+/* HOMEWORK FIVE */
+.hw-five {
+  width: 800px;
+  height: 450px;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+.hw-five img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.pag {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.pag button {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 0;
+  border-top: 0;
+  transition: 0.1s;
+}
+.pag button:hover {
+  background: transparent;
+}
+.pag button:active {
+  transform: scale(0.9);
+}
+.pag button:focus {
+  background: transparent;
+  transform: scale(0.9);
+}

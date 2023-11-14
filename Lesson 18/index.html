@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 18</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="img/js.png" />
+  </head>
+  <body>
+    <form>
+      <div class="data">
+        <div class="data-divs">
+          <!-- First Div -->
+          <input placeholder="First Name" type="text" id="fname" />
+          <input placeholder="Last Name" type="text" id="lname" />
+          <input placeholder="Age" type="text" id="age" />
+          <div onclick="selGen()" class="selgen">
+            <span id="selgentext">Select Gender</span>
+            <img id="selGenImg" src="./img/arrowdown.png" />
+          </div>
+          <div id="gen_sea_all">
+            <div class="sergen" id="sergen">
+              <div>
+                <label for="genderMale">Male</label>
+                <input
+                  type="radio"
+                  name="selectgenderfunc"
+                  id="genderMale"
+                  value="Male"
+                />
+              </div>
+              <div>
+                <label for="genderWoman">Woman</label>
+                <input
+                  type="radio"
+                  name="selectgenderfunc"
+                  id="genderWoman"
+                  value="Woman"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End First Div -->
+        <div class="data-divs">
+          <!-- Second Div -->
+          <div>
+            <label for="yesradio">Student</label>
+            <input type="radio" name="radio" id="yesradio" value="Student" />
+            <br />
+            <label for="noradio">Clueless</label>
+            <input type="radio" name="radio" id="noradio" value="Clueless" />
+          </div>
+          <div>
+            <input type="checkbox" id="uzbox" name="langu" value="Uzb" />
+            <label for="uzbox">Uzbek tili</label>
+            <br />
+            <input type="checkbox" id="enbox" name="langu" value="Eng" />
+            <label for="enbox">Ingliz tili</label>
+            <br />
+            <input type="checkbox" id="rubox" name="langu" value="Rus" />
+            <label for="rubox">Rus tili</label>
+          </div>
+        </div>
+        <!-- End Second Div -->
+        <div class="data-divs">
+          <!-- Three Div -->
+          <div>
+            <input type="color" id="inpcolor" />
+            <button  onclick="saves(event)">save</button>
+          </div>
+          <textarea placeholder="Description" id="tades"></textarea>
+        </div>
+        <!-- End Three Div -->
+      </div>
+    </form>
+    <div class="wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Type</th>
+            <th>Languages</th>
+            <th>Color</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="moon"></div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

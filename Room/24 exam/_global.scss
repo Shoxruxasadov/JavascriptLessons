@@ -1,0 +1,293 @@
+// ===== Fonts Familt ===== \\
+@font-face {
+    font-family: Notes;
+    src: url(../fonts/ShiftyNotesRegular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts//Poppins-Regular.ttf);
+}
+
+
+// ===== Default Code ===== \\
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+// ===== Delete Default ===== \\
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+input {
+    outline: none;
+    cursor: pointer;
+}
+
+// ========= Modal ========= \\
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    transition: all 0.4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+
+    &.active {
+        transform: scale(1);
+    }
+
+    .modal-adduser {
+        width: 500px;
+        height: 350px;
+        background-color: #ced4da;
+        border-radius: 1rem;
+        padding: 20px 30px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .modal-close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: red;
+            border-radius: 0 1rem 0 1rem;
+            cursor: pointer;
+            box-shadow: inset 0 0 10px -3px black;
+
+            i {
+                color: #ced4da;
+                font-size: 25px;
+                cursor: pointer;
+                text-shadow: 0 0 10px #001d3d7c;
+            }
+        }
+
+        .modal-title {
+            width: 100%;
+            line-height: 35px;
+
+            h1 {
+                font-size: 28px;
+                color: #5e5e5e;
+                text-shadow: 0 0 2px #001d3d5f;
+            }
+        }
+
+        .modal-inp {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            input {
+                width: 90%;
+                height: 35px;
+                border-radius: 0.5rem;
+                border: none;
+                padding: 0 12px;
+                box-shadow: 0 0 10px white;
+                color: #001D3D;
+                text-shadow: 0 0 2px #001d3d7c;
+                font-size: 16px;
+                letter-spacing: 0.5px;
+
+                &:focus {
+                    width: 100%;
+                }
+
+                &:nth-child(2) {
+                    width: 80%;
+
+                    &:focus {
+                        width: 90%;
+                    }
+                }
+
+                &:nth-child(3) {
+                    width: 70%;
+
+                    &:focus {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .modal-save {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            gap: 15px;
+
+            button:first-child {
+                width: 120px;
+                height: 35px;
+                background: gray;
+                border: none;
+                border-radius: 0 1rem 0 1rem;
+                font-size: 18px;
+                color: #ced4da;
+                text-shadow: 0 0 10px #001d3d;
+                box-shadow: inset 0 0 10px -2px black;
+
+                &:hover {
+                    letter-spacing: 1.2px;
+                }
+            }
+
+            button:last-child {
+                width: 120px;
+                height: 35px;
+                background: limegreen;
+                border: none;
+                border-radius: 1rem 0 1rem 0;
+                font-size: 18px;
+                color: #ced4da;
+                text-shadow: 0 0 10px #001d3daf;
+                box-shadow: inset 0 0 10px -3px black;
+
+                &:hover {
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// ========= Table ========= \\
+#table {
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgb(32, 32, 32, 0.3);
+    background: #fafafa;
+    text-align: center;
+
+    th,
+    td {
+        padding: 10px 15px;
+    }
+
+    th {
+        background: #2275ff;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+    td {
+        font-family: sans-serif;
+    }
+
+    td button {
+        width: 60px;
+    }
+
+    tr:nth-child(even) {
+        background: #eee;
+    }
+
+    tbody tr td:nth-child(5) {
+        width: 30%;
+
+        button {
+            width: 20%;
+            height: 30px;
+            border-radius: 2rem;
+            transition: .15s linear;
+            border: none;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+
+            &:hover {
+                background-color: #444;
+                color: #fff;
+                transform: scale(1.05);
+                margin: 0 7px;
+
+                &:nth-child(1) {
+                    background-color: limegreen;
+                }
+
+                &:nth-child(2) {
+                    background-color: royalblue;
+                }
+
+                &:nth-child(3) {
+                    background-color: goldenrod;
+                }
+
+                &:nth-child(4) {
+                    background-color: tomato;
+                }
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+
+
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #555;
+            font-variant: small-caps;
+        }
+    }
+
+    tbody tr td:nth-child(6) {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: .4rem;
+            border: 2px solid rgba(0, 0, 0, .2);
+        }
+
+        input {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+     1-savol:
+Prompt bor. Bu promptga login va parol kiritiladi. Agar login "Shift" va parol "Shift123" bulsa "siz platformaga kirdingiz" deb login 
+ yoki parol xato bulsa "login yoki parolanı şato kiritdingiz" deb va tech narsa kiritilmasa "Ruyxatdan uting" deb h1 ga chiqaring
+
+
+     2-savol:
+Promtda string malumot kiritiladi. Shu stringni oxiridan 2ta harfni olib boshiga qushib qoying va h1ga chiqaring.
+ Masalan. Developer bulsa , h1da == erDevelop buladi
+
+
+     3-savol:
+Prompt da string malumot kiritiladi. Shu malumotda "ha" suzi 0-indexdan yoki 1-indexdan boshlangan bulsa h1da true 
+ aks holda false chiqsin. Masalan: fhabumen == true. Ffhabumen == false 

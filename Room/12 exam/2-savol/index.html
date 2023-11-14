@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11 exam | 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-variant: small-caps;
+        background: linear-gradient(rgb(46, 161, 255), rgb(136, 46, 255));
+        color: #fff;
+      }
+      button{
+        width: 80px;
+        height: 40px;
+      }
+      .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .box{
+        display: flex;
+        align-items: center;
+        width: 800px;
+        height: 400px;
+        border: 2px solid white;
+        margin: 0 20px;
+        padding: 20px;
+        position: relative;
+      }
+      #circle{
+        position: absolute;
+        top: 172px;
+        left: 20px;
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: red;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button onclick="right()"> ==> </button>
+      <div class="box"><div id="circle"></div></div>
+      <button onclick="left()"> <== </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Lesson 7 | Shokh Developer</title>
+
+    <!-- CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link href="./img/icon/js.png" rel="icon" />
+    <link href="./img/icon/js.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="headCon">
+        <div id="headImg">
+          <img width="40px" height="40px" src="./img/icon/js.png" />
+          <span>JavaScript</span>
+        </div>
+        <div id="headSearch">
+          <label class="label">
+            <input id="hw-inp" maxlength="3" type="text" required />
+            <span>Homework</span>
+          </label>
+          <button id="headbtn" onclick="draw()">Press</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div id="mainCon" class="mainCon">
+        <!-- Homework 1 -->
+        <div id="hw1">
+          <div class="workone">
+            <div id="homework-one-box" class="homework-one-box"></div>
+            <div onclick="closed()" id="work-one-btn-close">
+              <img src="./img/svg/close.svg" />
+            </div>
+          </div>
+          <div class="pag">
+            <button class="pages rpc" onclick="up()">
+              <img src="./img/svg/up.svg" />
+            </button>
+            <div class="hwoPagCen">
+              <button class="pages rpt" onclick="left()">
+                <img src="./img/svg/left.svg" />
+              </button>
+              <button class="pages rpt" onclick="down()">
+                <img src="./img/svg/down.svg" />
+              </button>
+              <button class="pages rpt" onclick="right()">
+                <img src="./img/svg/right.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Homework 2 -->
+        <div id="hw2">
+          <div class="worktwo">
+            <h1 class="hw-two-cal">Calculator</h1>
+            <label class="label-two">
+              <input id="hwtInp1" type="text" required />
+              <span>First Value</span>
+            </label>
+            <label class="label-two">
+              <input id="hwtInp2" type="text" required />
+              <span>Second Value</span>
+            </label>
+            <div class="math">
+              <button onclick="plus()">+</button>
+              <button onclick="minus()">-</button>
+              <button onclick="increase()">×</button>
+              <button onclick="tobe()">÷</button>
+            </div>
+            <h1 id="hwTwoRes">Answer: NaN</h1>
+
+            <div onclick="closed()" id="work-one-btn-close">
+              <img src="./img/svg/close.svg" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Homework 3 -->
+        <div id="hw3">
+          <button onclick="rotate()" id="hwthRotate"><img src="./img/svg/arrowRotate.png"></button>
+          <div class="workthree">
+            <div class="hwth-box"></div>
+            <div class="hwth-center">
+              <div class="hwth-box"></div>
+              <div id="hwthArrow"><img src="./img/svg/arrowup.png"></div>
+              <div id="boxRed" class="hwth-box"></div>
+            </div>
+            <div class="hwth-box"></div>
+            <div onclick="closed()" id="work-one-btn-close">
+              <img src="./img/svg/close.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: MPoppins;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: RPoppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+$black: #000000;
+$blue: #14213d;
+$gold: #fca311;
+$gray: #e5e5e5;
+$white: #ffffff;
+
+$MPop: "MPoppins", sans-serif;
+$RPop: "RPoppins", sans-serif;
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    border: 2px solid $gray;
+    border-radius: 10rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $black;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $gray;
+}
+
+::selection {
+    background: $blue;
+    color: $white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    transition: 0.3s;
+}
+
+#usersSection {
+    display: block;
+}
+
+#postsSection,
+#comentSection,
+#todosSection,
+#albumsSection {
+    display: none;
+}
+
+.active {
+    background: white;
+    color: $blue;
+
+    button {
+        i {
+            padding-right: 0;
+            padding-left: 13px;
+            color: $blue !important;
+        }
+
+        b {
+            display: block !important;
+            background-color: red;
+        }
+    }
+
+}

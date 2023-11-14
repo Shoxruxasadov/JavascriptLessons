@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Lesson 8 | Shokh Developer</title>
+
+  <!-- CSS -->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="./img/icon/js.png" rel="icon" />
+  <link href="./img/icon/js.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="headCon">
+      <div id="headImg">
+        <img width="40px" height="40px" src="./img/icon/js.png" />
+        <span>JavaScript</span>
+      </div>
+      <div id="headSearch">
+        <label class="label">
+          <input id="hw-inp" maxlength="3" type="text" required />
+          <span>Homework</span>
+        </label>
+        <button onclick="draw()">Press</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div id="mainCon" class="mainCon">
+      <!-- Homework 1 -->
+      <div id="hw1">
+        <div class="hw1-1part">
+          <button id="headbtn" onclick="hwopShow()">Press</button>
+
+          <div id="hwopShowing">
+            <label class="labels">
+              <input id="hwopInp" maxlength="30" type="text" required />
+              <span>String</span>
+            </label>
+            <button id="headbtn" onclick="hwopShowTwo()">Press</button>
+          </div>
+          <!-- close -->
+          <div onclick="closed()" id="work-one-btn-close">
+            <img src="./img/svg/close.svg" />
+          </div>
+        </div>
+
+        <div id="hwopt" class="hw1-2part">
+          <div class="hwopt-btn">
+            <button id="fontBtnOne" onclick="sizePlus()"><img id="sm1" src="./img/rotate/sizePlus.svg"></button>
+            <button id="fontBtnOne" onclick="sizeMinus()"><img id="sm2" width="48px"
+                src="./img/rotate/sizeMinus.svg"></button>
+            <button id="fontBtnOne" onclick="rotateLeft()"><img width="32px"
+                src="./img/rotate/rotateRight.svg"></button>
+            <button id="fontBtnOne" onclick="rotateRight()"><img width="32px"
+                src="./img/rotate/rotateLeft.svg"></button>
+            <button id="fontBtnOne" onclick="reset()"><img id="sm5" width="44px" src="./img/rotate/reset.svg"></button>
+          </div>
+          <h1 id="hwoptFont"></h1>
+
+          <!-- close -->
+          <div onclick="closed()" id="work-one-btn-close">
+            <img src="./img/svg/close.svg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Homework 2 -->
+      <div id="hw2">
+        <div class="tvbox">
+          <div id="tvWrapper">
+            <div class="photos"><img src="./img/tv/photo1.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo2.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo3.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo4.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo5.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo6.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo7.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo8.jpg"></div>
+            <div class="photos"><img src="./img/tv/photo9.jpg"></div>
+          </div>
+        </div>
+
+        <div class="pag">
+          <button class="pages" onclick="nextBack(-1)">
+            <img src="./img/svg/left.svg" />
+          </button>
+          <button class="pages" onclick="showTv()">
+            <img width="23px" height="23px" src="./img/tv/tv.svg" />
+          </button>
+          <button class="pages" onclick="hideTv()">
+            <img src="./img/tv/tvoff.svg" />
+          </button>
+          <button class="pages" onclick="nextBack(1)">
+            <img src="./img/svg/right.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

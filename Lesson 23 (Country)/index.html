@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 23 (open with live server)</title>
+    <!-- == Fontawesome == -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div id="wrapper">
+      <select id="countrySelect"></select>
+    </div> -->
+
+    <div class="wrapper">
+      <div onclick="drawSearchCountry()" id="select" class="select">
+        <span>Select Country</span>
+        <i id="arrow" class="fa-solid fa-angle-down"></i>
+      </div>
+      <div id="content" class="content">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input onkeyup="searchCountry()" id="searchCountryInp" type="text" placeholder="Search Country" />
+        </div>
+        <ul id="options"></ul>
+      </div>
+    </div>
+
+    <script src="./axios.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

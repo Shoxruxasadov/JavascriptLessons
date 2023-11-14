@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+        font-variant: small-caps;
+        background: linear-gradient(rgb(46, 161, 255), rgb(136, 46, 255));
+        color: #fff;
+        font-family: sans-serif;
+      }
+      p {
+        font-size: 28px;
+      }
+      input {
+        width: 145px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 10px;
+        background-color: rgb(229, 241, 255, 0.8);
+        color: rgb(50, 50, 50);
+      }
+      button {
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        transition: 0.1s;
+        background-color: rgb(229, 241, 255, 0.8);
+        outline: none;
+        color: rgb(50, 50, 50);
+      }
+      button:active {
+        transform: scale(0.9);
+      }
+      .wrapper {
+        transform: scale(1.8);
+        text-align: center;
+      }
+      #counter {
+        text-align: center;
+      }
+      #inpAge {
+        width: 80px;
+      }
+      body div:first-child {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <input placeholder="name" type="text" id="inpName" />
+        <input placeholder="age" type="text" id="inpAge" />
+        <button onclick="draw()">Press</button>
+      </div>
+      <h1 id="names">Mening ismim:</h1>
+      <h1 id="age">Mening yoshim:</h1>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

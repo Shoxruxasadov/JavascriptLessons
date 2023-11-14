@@ -1,0 +1,948 @@
+@font-face {
+  font-family: SFpro;
+  src: url(../fonts/SFpro.OTF);
+}
+
+$desktop-color-back: #32332e;
+$desktop-color-dark: #464543;
+$desktop-color-gray: #646462;
+$desktop-color-gold: #ffa00a;
+
+$mobile-color-back: #000000;
+$mobile-color-gray: #a5a5a5;
+$mobile-color-dark: #333333;
+$mobile-color-gold: #ff9f0a;
+
+.dark-desk {
+  background: $desktop-color-dark;
+}
+.gray-desk {
+  background: $desktop-color-gray;
+}
+.gold-desk {
+  background: $desktop-color-gold;
+}
+
+button:active{
+  opacity: 80%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  cursor: default;
+  font-family: SFpro;
+  font-weight: 100;
+  box-sizing: border-box;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid $desktop-color-back;
+}
+@media (max-width: 500px) {
+  .screen {
+    border: 1px solid $mobile-color-back;
+  }
+}
+@media (max-width: 375px) {
+  .screen {
+    border: 1px solid $mobile-color-back;
+  }
+}
+
+.calculator {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background: $desktop-color-back;
+
+  .inp-all {
+    display: flex;
+    width: 100%;
+    height: 25%;
+
+    #inp {
+      align-self: flex-end;
+      text-align: end;
+      width: 100%;
+      height: 150px;
+      padding-right: 30px;
+      padding-top: 10px;
+      font-size: 128px;
+      background: transparent;
+      border: none;
+      color: white;
+    }
+    #inp::placeholder {
+      color: white;
+    }
+  }
+
+  .btns-all {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    height: 75%;
+
+    .desktop {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 60%;
+      height: 100%;
+
+      .btn-desk {
+        display: flex;
+        gap: 3px;
+
+        width: 100%;
+        height: 20%;
+
+        button {
+          width: 16.6666667%;
+          height: 100%;
+          border: none;
+          outline: none;
+          font-size: 55px;
+          color: white;
+          background: $desktop-color-dark;
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 40%;
+      height: 100%;
+
+      .btn-num {
+        display: flex;
+        gap: 3px;
+
+        width: 100%;
+        height: 20%;
+
+        button {
+          width: 25%;
+          height: 100%;
+          border: none;
+          outline: none;
+          font-size: 60px;
+          color: white;
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+        }
+
+        #zero {
+          width: 50.5%;
+          height: 100%;
+          margin-right: 0.45px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background: $desktop-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 25%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 128px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 75%;
+
+      .desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 55.5555555%;
+        height: 100%;
+
+        .btn-desk {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 20%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 55px;
+            color: white;
+            background: $desktop-color-dark;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          button:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 44.4444444%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background: $desktop-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 25%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 128px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 75%;
+
+      .desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 50%;
+        height: 100%;
+
+        .btn-desk {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 55px;
+            color: white;
+            background: $desktop-color-dark;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          button:nth-child(5) {
+            display: none;
+          }
+          button:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 50%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background: $desktop-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 25%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 128px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 75%;
+
+      .desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 42.8%;
+        height: 100%;
+
+        .btn-desk {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 33.3333333%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 55px;
+            color: white;
+            background: $desktop-color-dark;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          button:nth-child(4) {
+            display: none;
+          }
+          button:nth-child(5) {
+            display: none;
+          }
+          button:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 57.2%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background: $desktop-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 25%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 128px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 75%;
+
+      .desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 33.3333333%;
+        height: 100%;
+
+        .btn-desk {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 50%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 55px;
+            color: white;
+            background: $desktop-color-dark;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          button:nth-child(3) {
+            display: none;
+          }
+          button:nth-child(4) {
+            display: none;
+          }
+          button:nth-child(5) {
+            display: none;
+          }
+          button:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 66.6666667%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background: $desktop-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 25%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 128px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 75%;
+
+      .desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 25%;
+        height: 100%;
+
+        .btn-desk {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 55px;
+            color: white;
+            background: $desktop-color-dark;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          button:nth-child(2) {
+            display: none;
+          }
+          button:nth-child(3) {
+            display: none;
+          }
+          button:nth-child(4) {
+            display: none;
+          }
+          button:nth-child(5) {
+            display: none;
+          }
+          button:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 75%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background: $desktop-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 25%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 128px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 75%;
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 100%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 3px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-bottom: 80px;
+    background: $mobile-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 40%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 10px;
+        padding-top: 1px;
+        font-size: 80px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 60%;
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 14px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 48px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            border-radius: 100px;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+
+          .gray-desk {
+            background-color: #333 !important;
+          }
+          .dark-desk {
+            color: black;
+            background-color: #a5a5a5 !important;
+          }
+          .gold-desk {
+            background-color: $mobile-color-gold;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-bottom: 60px;
+    background: $mobile-color-back;
+
+    .inp-all {
+      display: flex;
+      width: 100%;
+      height: 35%;
+
+      #inp {
+        align-self: flex-end;
+        text-align: end;
+        width: 100%;
+        height: 150px;
+        padding-right: 5px;
+        padding-top: 1px;
+        font-size: 70px;
+        background: transparent;
+        border: none;
+        color: white;
+      }
+      #inp::placeholder {
+        color: white;
+      }
+    }
+
+    .btns-all {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      height: 65%;
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        height: 100%;
+
+        .btn-num {
+          display: flex;
+          gap: 14px;
+
+          width: 100%;
+          height: 20%;
+
+          button {
+            width: 25%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 32px;
+            color: white;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            border-radius: 100px;
+          }
+
+          #zero {
+            width: 50.5%;
+            height: 100%;
+            margin-right: 0.45px;
+          }
+
+          .gray-desk {
+            background-color: #333 !important;
+          }
+          .dark-desk {
+            color: black;
+            background-color: #a5a5a5 !important;
+          }
+          .gold-desk {
+            background-color: $mobile-color-gold;
+          }
+        }
+      }
+    }
+  }
+}

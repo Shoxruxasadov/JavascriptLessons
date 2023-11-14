@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.boxWrapper{
+    display: flex;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border: 50px solid white;
+    border-radius: 50%;
+}
+
+

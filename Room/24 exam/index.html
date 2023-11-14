@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24 exam</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="modal">
+        <div class="modal-adduser">
+          <div onclick="toggleModal()" class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="modal-title">
+            <h1>Add Item</h1>
+          </div>
+          <div class="modal-inp">
+            <input id="addNameInp" type="text" placeholder="Enter name" />
+            <input id="addPriceInp" type="text" placeholder="Enter price" />
+            <input
+              id="addQuantityInp"
+              type="text"
+              placeholder="Enter quantity"
+            />
+          </div>
+          <div class="modal-save">
+            <button onclick="toggleModal()">close</button>
+            <button onclick="pushItem()">save</button>
+          </div>
+        </div>
+      </div>
+      <section id="modal-btn-wrapper">
+        <button onclick="toggleModal()">Add Item</button>
+      </section>
+      <section id="table-wrapper">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Item Name</th>
+              <th>Price</th>
+              <th>Quanity</th>
+              <th>Action</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

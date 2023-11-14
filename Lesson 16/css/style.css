@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  background: rgb(80, 187, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(80, 187, 255, 1) 20%,
+    rgba(34, 117, 255, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(80, 187, 255, 1) 20%,
+    rgba(34, 117, 255, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(80, 187, 255, 1) 20%,
+    rgba(34, 117, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#50bbff",endColorstr="#2275ff",GradientType=1);
+}
+
+#hw_one,
+#hw_two,
+#hw_three,
+#hw_four {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 5%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+}
+
+.add-div {
+  position: absolute;
+  top: 100px;
+  right: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  background: #2275ff;
+  border: none;
+  border-radius: 1rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: #fafafa;
+  color: #323232;
+}
+
+input::placeholder {
+  color: white;
+}
+input:focus::placeholder {
+  color: #323232;
+}
+
+button {
+  width: 100px;
+  height: 25px;
+  background: #2275ff;
+  color: #fafafa;
+  border: none;
+  box-shadow: 0 2px 12px rgb(32, 32, 32, 0.3);
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #fafafa;
+  color: #323232;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+#table-one {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgb(32, 32, 32, 0.3);
+  background: #fafafa;
+  text-align: center;
+}
+
+#table-one th,
+td {
+  padding: 12px 15px;
+}
+
+#table-one th {
+  background: #2275ff;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+#table-one td {
+  font-family: "Open Sans", sans-serif;
+}
+
+#table-one td button {
+  width: 60px;
+}
+
+#table-one tr:nth-child(even) {
+  background: #eee;
+}
+
+#table-two {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 0 0 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgb(32, 32, 32, 0.3);
+  text-align: center;
+}
+
+#table-two td {
+  text-align: left;
+  width: 220px;
+  padding: 12px 15px;
+}
+
+#table-two th {
+  padding: 12px 15px;
+  border-right: 2px solid;
+}
+
+#table-two th input {
+  height: 15px;
+  width: 15px;
+}
+
+#table-two th {
+  background: #2275ff;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+#table-two td {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  background: #fafafa;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 430px;
+  padding: 30px 20px 20px 20px;
+  border-radius: 0 2rem 0 2rem;
+  background: #fafafa;
+}
+
+.add-todo input {
+  width: 87%;
+  height: 45px;
+  background: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid #32323262;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.add-todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-todo input::placeholder {
+  color: #32323295;
+}
+
+.add-todo button {
+  width: 45px;
+  height: 45px;
+  box-shadow: none;
+  border-radius: 0.3rem;
+  font-size: 30px;
+}
+
+#adden div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+  border-radius: 0 1rem 0 1rem;
+  background: #e0e0e0;
+}
+
+#adden div {
+  text-align: left;
+}
+
+#adden div button {
+  transform: scale(0);
+  transition: 0.4s;
+}
+
+#adden div:hover button {
+  transform: scale(1);
+}
+
+#adden div button {
+  width: 45px;
+  height: 45px;
+  box-shadow: none;
+  padding-top: 3px;
+  border-radius: 0.2rem 1rem 0.2rem 0.2rem;
+  background: #ff3822;
+}
+#adden div button img {
+  cursor: pointer;
+}
+
+.clearall-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clearall-div p {
+  padding-left: 5px;
+  font-size: 17px;
+}
+
+.clearall-div button {
+  height: 35px;
+  width: 80px;
+  box-shadow: none;
+  background: #6a00ff;
+  border-radius: 0.2rem;
+  font-size: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 0 1.8rem 0 1.8rem;
+  position: absolute;
+  top: 80px;
+  left: 645px;
+}
+
+.form input {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  background: #2275ff;
+  border: none;
+  border-radius: 1rem;
+  padding: 10px;
+  color: #fafafa;
+  cursor: pointer;
+  font-family: "Roboto";
+}
+.form input:focus {
+  background: #fafafa;
+  color: #323232;
+}
+
+.form textarea {
+  max-width: 300px;
+  min-width: 300px;
+  height: 80px;
+  max-height: 200px;
+  outline: none;
+  padding-left: 10px;
+  background: #2275ff;
+  border: none;
+  border-radius: 1rem;
+  padding: 10px;
+  color: #fafafa;
+  cursor: pointer;
+  font-family: "Roboto";
+}
+.form textarea::placeholder {
+  color: #fafafa;
+  font-family: "Roboto";
+}
+.form textarea:focus {
+  background: #fafafa;
+  color: #323232;
+}
+
+.form button {
+  width: 120px;
+  height: 30px;
+  font-family: Roboto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 100vw;
+  height: 200px;
+  margin-bottom: 70px;
+}
+
+.childmess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 200px;
+  height: 200px;
+  background: #fafafa;
+  border-radius: 0 5rem 5rem 5rem;
+  padding: 40px 10px;
+  color: #2275ff;
+  cursor: pointer;
+  font-family: "Roboto";
+}

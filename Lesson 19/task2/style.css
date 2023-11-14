@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0;
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: linear-gradient( #7f7fd5, #86a8e7, #91eae4);
+  border-left: 3px solid black;
+  border-right: 1px solid black;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+main {
+  background-color: bisque;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px 10px 10px 0;
+  background-color: snow;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.inpTitle {
+  width: 100%;
+  height: 30px;
+}
+
+.radioBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.radioBtn div {
+  display: flex;
+}
+
+.radioBtn div:first-of-type {
+  display: none;
+}
+
+.radioBtn div input {
+  margin-left: 10px;
+}
+
+.form-group .form-divs {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttonform {
+  width: 25%;
+}
+
+.wrapper {
+  width: 800px;
+  height: 400px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border: 2px solid;
+  border-radius: 1rem;
+  background-color: tomato;
+}
+
+.junior {
+  width: 50%;
+  height: 100%;
+  border: 2px solid;
+  border-radius: 1rem;
+  background-color: snow;
+  overflow: hidden;
+}
+.middle {
+  width: 50%;
+  height: 100%;
+  border: 2px solid;
+  border-radius: 1rem;
+  background-color: snow;
+  overflow: hidden;
+}
+
+.titleh3 {
+  text-align: center;
+  width: 23.7%;
+  height: 5%;
+  position: fixed;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  padding-top: 60px;
+  margin-bottom: 50px;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.content div {
+  text-align: center;
+  border: 2px dashed;
+  border-radius: 1rem 1rem 1rem 0;
+  width: fit-content;
+  padding: 10px;
+  background-color: aquamarine;
+}

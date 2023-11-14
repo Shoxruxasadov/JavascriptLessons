@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 16</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/js.png" />
+  </head>
+  <body>
+    <div class="header">
+      <button onclick="hw1()">1</button>
+      <button onclick="hw2()">2</button>
+      <button onclick="hw3()">3</button>
+      <button onclick="hw4()">4</button>
+    </div>
+    <div class="main">
+      <div id="hw_one">
+        <div class="add-div">
+          <div class="inp-div">
+            <input placeholder="Full Name" type="text" id="inp_name" />
+            <input placeholder="Position" type="text" id="inp_pos" />
+            <input placeholder="Salary" type="text" id="inp_sal" />
+          </div>
+          <br />
+          <button onclick="add()">Add</button>
+        </div>
+
+        <table id="table-one">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Full Name</th>
+              <th>Position</th>
+              <th>Salary</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <div id="hw_two">
+        <table id="table-two">
+          <tr>
+            <th><input type="checkbox" onclick="app(this)" /></th>
+            <td id="apple">Apple</td>
+          </tr>
+          <tr>
+            <th><input type="checkbox" onclick="micro(this)" /></th>
+            <td id="microsoft">Microsoft</td>
+          </tr>
+          <tr>
+            <th><input type="checkbox" onclick="goo(this)" /></th>
+            <td id="google">Google</td>
+          </tr>
+          <tr>
+            <th><input type="checkbox" onclick="face(this)" /></th>
+            <td id="facebook">Facebook</td>
+          </tr>
+        </table>
+      </div>
+      <div id="hw_three">
+        <div class="todo-app">
+          <h1>Todo App</h1>
+          <div class="add-todo">
+            <input placeholder="Add your new todo" type="text" id="inp_todo" />
+            <button onclick="addTodo()">+</button>
+          </div>
+          <div id="adden"></div>
+          <div class="clearall-div">
+            <p id="have-task">Your have 0 pending tasks</p>
+            <button onclick="clearAll()">Clear All</button>
+          </div>
+        </div>
+      </div>
+      <div id="hw_four">
+        <div class="form">
+          <input id="subject_form" placeholder="Subject" type="text" />
+          <textarea id="message_form" placeholder="Message"></textarea>
+          <button onclick="saves()">save</button>
+        </div>
+        <div id="messages" class="messages"></div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

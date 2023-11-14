@@ -1,0 +1,1 @@
+{"sleepIn-code":"function sleepIn(weekday, vacation){\n  \n}","in3050-code":"function in3050(a, b){\n  if((a>=30 && a<=40) && (b>=30 && b<=40)){\n    return true\n  }else if((a>=40 && a<=50) && (b>=40 && b<=50)){\n    return true\n  }else{\n    return false\n  }\n}","in3050":"true"}

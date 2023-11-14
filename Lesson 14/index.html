@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE -->
+    <title>Lesson 14</title>
+    <!-- SCSS -->
+    <link href="./scss/style.css" rel="stylesheet" />
+    <!-- ICON -->
+    <link href="./img/js.png" rel="apple-touch-icon" />
+    <link href="./img/js.png" rel="icon" />
+  </head>
+  <body>
+    <div class="header">
+      <button onclick="homeWorkOne()">1</button>
+      <button onclick="homeWorkTwo()">2</button>
+    </div>
+    <div class="main">
+      <div id="hw1">
+        <div class="homework1">
+          <div class="traffic">
+            <div class="circle" id="red"></div>
+            <div class="circle" id="yellow"></div>
+            <div class="circle" id="green"></div>
+          </div>
+          <div class="number">
+            <div id="line"></div>
+            <div id="num">15</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hw2">
+        <div class="homework2">
+          <span onclick="plus()" class="plus">+</span>
+          <span id="num_counter" class="num">0</span>
+          <span onclick="minus()" class="minus">-</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

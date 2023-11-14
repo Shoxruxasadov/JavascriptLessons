@@ -1,0 +1,61 @@
+@font-face {
+    font-family: MPoppins;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: RPoppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: MMontserrat;
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: RMontserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+$red: #e63946;
+$white: #f1faee;
+$cyan: #a8dadc;
+$blue: #457b9d;
+$dark: #1d3557;
+
+$MPop: "MPoppins", sans-serif;
+$RPop: "RPoppins", sans-serif;
+$MMon: "MMontserrat", sans-serif;
+$RMon: "RMontserrat", sans-serif;
+
+::-webkit-scrollbar {
+    width: 0.1em;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $white;
+    border-radius: 10rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::selection {
+    background: $dark;
+    color: $white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    transition: 0.3s;
+}
+
+body {
+    background: linear-gradient(45deg, #4C1A57 -100%, #BAB0D4 100%);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Lesson 11</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Icons -->
+    <link href="./img/js.png" rel="icon" />
+    <link href="./img/js.png" rel="apple-touch-icon" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+    </div> <!-- HEADER END -->
+
+    <div class="main">
+        <!-- HOMEWORK ONE -->
+        <div id="homework_one">
+            <div class="hw-one">
+                <input placeholder="Firstname" type="text" id="first_name">
+                <input placeholder="Lastname" type="text" id="last_name">
+                <input placeholder="Age" type="text" id="age">
+                <input placeholder="City" type="text" id="city">
+                <button onclick="save()">Save</button>
+            </div>
+        </div> <!-- HOMEWORK ONE END -->
+
+        <!-- HOMEWORK TWO -->
+        <div id="homework_two">
+            <div class="hw-two">
+                <div class="add-save-box">
+                    <div class="add-btn-box">
+                        <button onclick="add()">Add</button>
+                    </div>
+                    <div id="description_box">
+                        <div id="dc_box" class="dc-box">
+                            <input placeholder="Description" type="text" id="dc_inp">
+                            <button onclick="dcSave()">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="dc_text_box" class="dc-text">
+                    <p id="dc_text"></p>
+                </div>
+            </div>
+        </div> <!-- HOMEWORK TWO END -->
+
+        <!-- HOMEWORK THREE -->
+        <div id="homework_three">
+            <div class="hw-three">
+                <button id="onoff_btn" onclick="onoff()"><span id="onoff_text">ON</span></button>
+            </div>
+        </div> <!-- HOMEWORK THREE END -->
+
+        <!-- HOMEWORK FOUR -->
+        <div id="homework_four">
+            <div class="btn-clock">
+                <button onclick="start()">START</button>
+                <button onclick="stope()">STOP</button>
+            </div>
+            <div class="hw-four">
+                <img id="clock" src="./img/clock-arrow.png">
+            </div>
+        </div> <!-- HOMEWORK FOUR END -->
+
+        <!-- HOMEWORK FOUR -->
+        <div id="homework_five">
+            <div class="hw-five">
+                <img id="images" src="./img/1.jpg">
+            </div>
+            <div class="pag">
+                <button onclick="prev(-1)">
+                    <img width="50px" src="./img/prev.png" />
+                </button>
+                <button onclick="next(1)">
+                    <img width="50px" src="./img/next.png" />
+                </button>
+            </div>
+        </div> <!-- HOMEWORK FOUR END -->
+
+    </div> <!-- MAIN END -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

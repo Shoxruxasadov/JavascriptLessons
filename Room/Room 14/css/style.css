@@ -1,0 +1,33 @@
+/* DEFAULT CODE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  cursor: default;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#e3edf7, #c4dfff);
+}
+
+input,
+button,
+a {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+}
